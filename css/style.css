@@ -38,6 +38,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 body {
   background: var(--bg);
@@ -773,9 +774,6 @@ section {
 .services-parallax {
   position: absolute;
   inset: -25%;
-  /* Replace with your own services background image */
-  background-image: url("https://picsum.photos/id/536/1920/1080");
-  background-size: cover;
   background-position: center;
   will-change: transform;
 }
@@ -784,7 +782,7 @@ section {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(1, 135, 144, 0.93) 0%,
+    rgb(1 135 144) 0%,
     rgba(0, 84, 97, 0.96) 100%
   );
 }
@@ -916,7 +914,7 @@ section {
 }
 .step-number {
   font-family: var(--font-display);
-  font-size: 0.68rem;
+  font-size: 1.2rem;
   letter-spacing: 0.24em;
   color: var(--accent-dark);
   margin-bottom: 18px;
@@ -1596,6 +1594,30 @@ section {
 }
 
 @media (max-width: 520px) {
+  .hero {
+    padding: 80px 0 80px;
+  }
+  .scroll-line {
+    height: 20px;
+  }
+  .hero-mini-stats {
+    padding-top: 20px;
+  }
+  .footer-content {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding: 40px 0 30px;
+  }
+  .footer-bottom {
+    padding-top: 25px;
+  }
+  .services {
+    padding: 70px 0;
+  }
+  .section-header {
+    margin-bottom: 40px;
+  }
   .gallery-grid {
     columns: 1;
   }
@@ -1609,6 +1631,9 @@ section {
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  section {
+    padding: 55px 0;
   }
   .testimonial-card {
     padding: 0;
